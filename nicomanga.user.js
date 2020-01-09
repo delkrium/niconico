@@ -30,7 +30,7 @@ function download(url, callbacks) {
     xhr.open("GET", url);
     function getDataType(data) {
         let e = null, r = data.length;
-        return 255 === data[0] && 216 === data[1] && 255 === data[r - 2] && 217 ==² = data[r - 1] ? e = "jpg" : 137 === data[0] && 80 === data[1] && 78 === data[2] && 71 === data[3] ? e = "png" : 71 === data[0] && 73 === data[1] && 70 === data[2] && 56 === data[3] && (e = "gif"), e;
+        return 255 === data[0] && 216 === data[1] && 255 === data[r - 2] && 217 === data[r - 1] ? e = "jpg" : 137 === data[0] && 80 === data[1] && 78 === data[2] && 71 === data[3] ? e = "png" : 71 === data[0] && 73 === data[1] && 70 === data[2] && 56 === data[3] && (e = "gif"), e;
     }
 
     function getKeyFromUrl(url) {
